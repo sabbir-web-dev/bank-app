@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply bg-color-secondary hover:opacity-80   py-[10px] px-7 my-5  inline  rounded-md font-semibold duration-700;
+}
+
+.heading-text {
+  @apply text-4xl font-bold leading-normal text-center;
+}
+.top-heading {
+  @apply text-color-secondary font-bold py-5 text-center;
+}
+
+.blob1 {
+  @apply bg-color-blob w-80 h-80 absolute top-0 -left-10 rounded-full blur-2xl opacity-30 overflow-hidden;
+}
+.blob2 {
+  @apply bg-color-secondary w-80 h-80 absolute -bottom-14 -right-12 rounded-full blur-2xl opacity-30 overflow-hidden;
+}
+.col3 {
+  @apply grid pt-10 gap-7 md:grid-cols-2 lg:grid-cols-3;
+}
+
+.card-heading {
+  @apply text-xl font-bold leading-normal py-2;
+}
+
+.card {
+  @apply p-8 border-2 border-color-gray rounded-lg hover:bg-color-primary-dark duration-500;
+}
+.Pcard {
+  @apply p-8 border-2 py-12 border-color-gray rounded-lg cursor-pointer  duration-500;
+}
+.cardBtn {
+  @apply hover:bg-color-secondary w-full  rounded-md font-semibold duration-700 bg-color-primary-dark text-center mt-7;
+}
+.card-btn {
+  @apply inline-block p-4 px-7 rounded-2xl  text-6xl bg-color-primary cursor-pointer hover:bg-color-secondary duration-500;
+}
+.user-photo {
+  @apply w-24 h-24 rounded-full overflow-hidden p-1 cursor-pointer hover:opacity-95 duration-300 ease-linear;
+}
+.user-active {
+  @apply border-color-secondary border-2;
+}
+.user-text {
+  display: none;
+  animation: moveup 0.5s linear forwards;
+}
+.text-active {
+  display: block;
+}
+.moveleft {
+  animation: moveleft 1s linear forwards;
+}
+.moveright {
+  animation: moveright 1s linear backwards;
+}
+.hideCard {
+  opacity: 0;
+  transition: opacity 0.5s ease; /* Adjust the duration and timing function as needed */
+}
+
+.showCard {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+.li-active{
+  @apply text-color-secondary ;
+}
+@keyframes moveup {
+  0% {
+    margin-top: 40px;
+    opacity: 0;
+  }
+  50% {
+    margin-top: 20px;
+    opacity: 0.1;
+  }
+  100% {
+    margin-top: 0px;
+    opacity: 1;
+  }
+}
+@keyframes moveleft {
+  0% {
+    margin-left: 1000px;
+    opacity: 0;
+  }
+  50% {
+    margin-left: 50px;
+    opacity: 0.1;
+  }
+  100% {
+    margin-left: 0px;
+    opacity: 1;
+  }
+}
+@keyframes moveright {
+  0% {
+    margin-right: 1000px;
+    opacity: 0;
+  }
+  50% {
+    margin-right: 50px;
+    opacity: 0.1;
+  }
+  100% {
+    margin-right: 0px;
+    opacity: 1;
+  }
+}
+
+.news-title {
+  @apply underline  hover:no-underline font-bold hover:text-color-secondary py-8 inline-block ease-in;
+}
+.qLink{
+  @apply underline  hover:no-underline hover:text-color-secondary  ease-in;
+}
+/*     */
+.input {
+  @apply p-3 rounded-md  text-color-primary-dark  outline-[0.5px] outline-color-secondary hover:shadow font-semibold
+}
+
+
